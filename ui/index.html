@@ -3,53 +3,347 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI Tech Consultant - Unified Control Suite</title>
+  <title>AI Tech Consultant - Production Suite</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }</style>
 </head>
 <body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+  <!-- Top Navigation Header -->
   <header class="bg-white border-b border-slate-200 px-6 py-4 flex items-center justify-between shadow-sm sticky top-0 z-30">
     <div class="flex items-center space-x-3">
-      <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-lg">AI</div>
+      <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-sm">AI</div>
       <div>
         <h1 class="text-lg font-bold text-slate-800 leading-tight">AI Tech Consultant</h1>
-        <p class="text-xs text-slate-500">One brain · Smart inbox · 1-hour scopes</p>
+        <p class="text-xs text-slate-500">One brain &middot; Smart inbox &middot; 1-hour scopes</p>
       </div>
     </div>
+    <!-- Tabs matching the requirements -->
     <div class="flex space-x-2 bg-slate-100 p-1 rounded-xl text-sm font-medium">
-      <button id="tab-kb" class="px-4 py-2 rounded-lg bg-white shadow-sm text-indigo-600 font-semibold">1. Knowledge Brain</button>
-      <button id="tab-inbox" class="px-4 py-2 rounded-lg text-slate-600">2. Inbox Agent</button>
-      <button id="tab-sow" class="px-4 py-2 rounded-lg text-slate-600">3. Meeting to SOW</button>
+      <button onclick="setTab('kb')" id="tab-btn-kb" class="tab-btn px-4 py-2 rounded-lg bg-white shadow-sm text-indigo-600 font-semibold transition cursor-pointer">1. Knowledge Brain</button>
+      <button onclick="setTab('inbox')" id="tab-btn-inbox" class="tab-btn px-4 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition cursor-pointer">2. Inbox Agent (Mailo)</button>
+      <button onclick="setTab('sow')" id="tab-btn-sow" class="tab-btn px-4 py-2 rounded-lg text-slate-600 hover:text-slate-900 transition cursor-pointer">3. Meeting to SOW (StimMate)</button>
     </div>
     <div class="flex items-center space-x-3">
-      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">● Live Production</span>
+      <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">&bull; Live Production</span>
     </div>
   </header>
+
   <main class="flex-1 p-6 max-w-7xl w-full mx-auto">
-    <div id="panel-kb" class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-        <h2 class="font-bold text-slate-800 mb-2">Knowledge Base Metrics</h2>
-        <div class="bg-slate-50 p-4 rounded-xl mb-4">
-          <div class="text-3xl font-extrabold text-indigo-600">9</div>
-          <div class="text-xs text-slate-500 font-semibold mt-1">Active Solution Articles</div>
-        </div>
-        <div class="bg-slate-50 p-4 rounded-xl">
-          <div class="text-3xl font-extrabold text-indigo-600">32</div>
-          <div class="text-xs text-slate-500 font-semibold mt-1">Indexed Context Chunks</div>
-        </div>
-      </div>
-      <div class="md-col-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[550px]">
-        <div class="font-bold text-slate-800 mb-1">Solution Center Assistant</div>
-        <p class="text-xs text-slate-500 mb-4">Multimodal answers grounded with official citations & screenshots</p>
-        <div id="chat-history" class="flex-1 overflow-y-auto space-y-3 text-sm">
-          <div class="bg-slate-100 p-t3.5 rounded-2xl max-w-lg text-slate-700">
-            Hello! I am your AI Knowledge Brain connected to Brilliant Directories Solution Center. Ask me about payment gateways, refunds, member cancellations, or search filters.
+    <!-- ==================== TAB 1: KNOWLEDGE BRAIN ==================== -->
+    <section id="panel-kb" class="tab-panel grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+        <div>
+          <h2 class="font-bold text-slate-800 mb-2">Knowledge Base Metrics</h2>
+          <p class="text-xs text-slate-500 mb-4">Grounded against Brilliant Directories official Solution Center.</p>
+          <div class="bg-slate-50 p-4 rounded-xl mb-3 border border-slate-100">
+            <div class="text-3xl font-extrabold text-indigo-600">9</div>
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mt-1">Active Solution Articles</div>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl mb-3 border border-slate-100">
+            <div class="text-3xl font-extrabold text-indigo-600">32</div>
+            <div class="text-xs text-slate-500 uppercase tracking-wider font-semibold mt-1">Indexed Context Chunks</div>
+          </div>
+          <div class="bg-slate-50 p-4 rounded-xl mb-3 border border-slate-100">
+            <div class="text-xs font-semibold text-slate-700 mb-1">Supported Gateways & Topics</div>
+            <div class="text-xs text-slate-500 leading-relaxed">&bull; Stripe / PayPal / Authorize.net<br/>&bull; Transaction & Refund Policy<br/>&bull; Radius Search & Form Manager</div>
           </div>
         </div>
-        <div class="flex space-x-2 mt-4">
-          <input id="query-input" type="text" placeholder="e.g. How do I configure Stripe payment gateway?" class="flex-1 border border-slate-300 rounded-xl px-4 py-2.5 text-sm" />
-          <button id="send-q" class="px-5 py-2.5 bg-indigo-600 text-white rounded-xl font-semibold text-sm">Ask Brain</button>
+        <button onclick="runDailySync()" class="w-full py-2.5 px-4 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-semibold transition cursor-pointer">Run Incremental Daily Sync</button>
+      </div>
+
+      <div class="md:col-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[600px]">
+        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+          <div>
+            <h3 class="font-bold text-slate-800">Solution Center Assistant</h3>
+            <p class="text-xs text-slate-500">Answers with citations; escalates if knowledge is absent</p>
+          </div>
+          <span class="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-lg font-medium">Grounding Engine Active</span>
+        </div>
+        <div id="chat-history" class="flex-1 overflow-y-auto space-y-4 pr-2 mb-4 text-sm">
+          <div class="flex items-start space-x-3">
+            <div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-xs flex-shrink-0">AI</div>
+            <div class="bg-slate-100 p-3.5 rounded-2xl max-w-lg text-slate-700 leading-relaxed">
+              Hello! I am your AI Knowledge Brain connected to Brilliant Directories Solution Center. Ask me about payment gateways, refunds, member cancellations, or search filters.
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 pt-2 border-t border-slate-100">
+          <input id="kb-input" type="text" onkeydown="if(event.key==='Enter') askBrain();" placeholder="e.g. How do I configure Stripe payment gateway and test mode?" class="flex-1 border border-slate-300 rounded-xl px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <button onclick="askBrain()" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-semibold transition cursor-pointer">Ask Brain</button>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- ==================== TAB 2: INBOX AGENT ==================== -->
+    <section id="panel-inbox" class="tab-panel hidden grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[650px]">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-slate-800">Customer Inbox</h3>
+          <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-medium">50 Synthetic Emails</span>
+        </div>
+        <div id="email-list" class="flex-1 overflow-y-auto space-y-2 pr-1"></div>
+      </div>
+
+      <div class="md:col-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[650px]">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+          <div>
+            <span id="active-email-badge" class="text-xs px-2.5 py-0.5 rounded-full font-semibold bg-blue-100 text-blue-800 uppercase tracking-wide">how_to</span>
+            <h3 id="active-email-subject" class="text-base font-bold text-slate-900 mt-1">-</h3>
+            <p id="active-email-sender" class="text-xs text-slate-500">Sender: -</p>
+          </div>
+          <div class="text-right">
+            <div class="text-xs font-semibold text-slate-500">Consecutive Approvals</div>
+            <div id="streak-counter" class="text-2xl font-black text-indigo-600">0 / 20</div>
+          </div>
+        </div>
+
+        <div class="mb-3 bg-slate-50 p-3 rounded-xl border border-slate-100">
+          <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Incoming Customer Message:</span>
+          <p id="active-email-body" class="text-sm text-slate-700 mt-1 italic"></p>
+        </div>
+
+        <div class="flex-1 flex flex-col mb-4">
+          <div class="flex items-center justify-between mb-1">
+            <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">AI Suggested Reply (Editable):</span>
+            <span id="autonomy-badge" class="text-xs text-emerald-600 font-semibold">Standard Intent: Autonomous Eligible at 20</span>
+          </div>
+          <textarea id="draft-text" class="w-full flex-1 border border-slate-300 rounded-xl p-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 leading-relaxed font-sans"></textarea>
+        </div>
+
+        <div class="flex space-x-3 pt-2 border-t border-slate-100">
+          <button onclick="approveEmail()" class="flex-1 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-semibold transition cursor-pointer">Approve &amp; Send (Unedited)</button>
+          <button onclick="editEmail()" class="flex-1 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-sm font-semibold transition cursor-pointer">Send With My Human Edits (Resets Streak)</button>
+          <button onclick="rejectEmail()" class="px-4 py-2.5 bg-rose-50 hover:bg-rose-100 text-rose-700 rounded-xl text-sm font-semibold transition cursor-pointer">Reject</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TAB 3: MEETING TO SCOPE ==================== -->
+    <section id="panel-sow" class="tab-panel hidden grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[650px]">
+        <h3 class="font-bold text-slate-800 mb-1">Client Meeting Transcripts</h3>
+        <p class="text-xs text-slate-500 mb-4">Multi-agent requirements extraction &amp; scope diffing.</p>
+        <div class="space-y-2 mb-3">
+          <button onclick="loadTranscript(1)" class="w-full text-left p-2.5 rounded-xl border border-slate-200 hover:bg-indigo-50 hover:border-indigo-300 transition cursor-pointer">
+            <div class="font-semibold text-xs text-slate-900">Meeting 1: Discovery Call</div>
+            <div class="text-[11px] text-slate-500">Wellness Directory (Search, filters, deposits)</div>
+          </button>
+          <button onclick="loadTranscript(2)" class="w-full text-left p-2.5 rounded-xl border border-slate-200 hover:bg-indigo-50 hover:border-indigo-300 transition cursor-pointer">
+            <div class="font-semibold text-xs text-slate-900">Meeting 2: B2B Dental eCommerce</div>
+            <div class="text-[11px] text-slate-500">Net-30 invoices, notifications, Authorize.net</div>
+          </button>
+          <button onclick="loadTranscript(3)" class="w-full text-left p-2.5 rounded-xl border border-slate-200 hover:bg-indigo-50 hover:border-indigo-300 transition cursor-pointer">
+            <div class="font-semibold text-xs text-slate-900">Meeting 3: Follow-Up Changes</div>
+            <div class="text-[11px] text-slate-500">Scope diff: removed deposits, added Maps</div>
+          </button>
+        </div>
+        <textarea id="transcript-input" class="flex-1 border border-slate-200 rounded-xl p-3 text-xs leading-relaxed text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-3 resize-none"></textarea>
+        <div class="flex space-x-2">
+          <button onclick="generateSOW()" class="flex-1 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl text-sm font-semibold transition cursor-pointer">Generate SOW</button>
+          <button onclick="generateScopeDiff()" class="py-2.5 px-3 bg-amber-500 hover:bg-amber-600 text-white rounded-xl text-xs font-semibold transition cursor-pointer">Scope Diff</button>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col h-[650px] overflow-y-auto">
+        <div class="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+          <div>
+            <h3 id="sow-title" class="text-lg font-bold text-slate-900">Directory Platform SOW &amp; Proposal</h3>
+            <p id="sow-client" class="text-xs text-slate-500">Client: Wellness Directory LLC</p>
+          </div>
+          <div class="flex space-x-4 text-right">
+            <div>
+              <div class="text-xs font-semibold text-slate-500">Total Effort</div>
+              <div id="sow-hours" class="text-xl font-black text-indigo-600">66 hrs</div>
+            </div>
+            <div>
+              <div class="text-xs font-semibold text-slate-500">Proposal Cost</div>
+              <div id="sow-cost" class="text-xl font-black text-emerald-600">$7,920.00</div>
+            </div>
+          </div>
+        </div>
+        <div id="diff-alert" class="hidden mb-4 p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs leading-relaxed"></div>
+        <div class="mb-4">
+          <h4 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Extracted Work Breakdown:</h4>
+          <div id="sow-tasks" class="space-y-2"></div>
+        </div>
+        <div class="mt-auto pt-4 border-t border-slate-100 flex items-center justify-between">
+          <div id="sow-approval-status" class="text-xs font-medium text-slate-500">Human Approval: <span class="text-amber-600 font-semibold">Pending Review</span></div>
+          <button onclick="approveSOW()" class="py-2 px-6 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-sm font-semibold transition cursor-pointer">Approve &amp; Issue Proposal</button>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <script>
+    // Tab switching logic
+    function setTab(tabName) {
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(b => {
+        b.classList.remove('bg-white', 'shadow-sm', 'text-indigo-600', 'font-semibold');
+        b.classList.add('text-slate-600');
+      });
+      const panel = document.getElementById('panel-' + tabName);
+      const btn = document.getElementById('tab-btn-' + tabName);
+      if (panel) panel.classList.remove('hidden');
+      if (btn) {
+        btn.classList.add('bg-white', 'shadow-sm', 'text-indigo-600', 'font-semibold');
+        btn.classList.remove('text-slate-600');
+      }
+    }
+
+    // Task 1: Knowledge Brain Grounding Data
+    const kbData = [
+      { k: ['stripe', 'payment', 'gateway', 'test mode'], t: 'How to Manage Finance and Payment Gateways', a: '1. Navigate to Finance > Payment Gateways in the admin dashboard.\n2. Select Stripe, PayPal Standard, or Authorize.net.\n3. Enter API Secret and Publishable keys.\n4. Toggle Test Mode ON to test transactions.\n5. Click Save Gateway Changes.', u: 'https://support.brilliantdirectories.com/support/solutions/articles/12000045612-how-to-manage-finance-and-payment-gateways' },
+      { k: ['refund', 'cancel', 'cancellation'], t: 'Setting Up Member Refund and Cancellation Rules', a: 'Members can cancel self-service from Member Dashboard > Account Settings if enabled. To issue refunds, go to Finance > Transaction History, locate invoice, and click Actions > Issue Refund.', u: 'https://support.brilliantdirectories.com/support/solutions/articles/12000045613-setting-up-member-refund-and-cancellation-rules' },
+      { k: ['search', 'filter', 'radius'], t: 'Customizing Search Filters and Sidebar Widgets', a: 'Search filters are customized in Toolbox > Form Manager under Listing Search - Sidebar form. Radius search is enabled in Settings > General Settings > Search Settings.', u: 'https://support.brilliantdirectories.com/support/solutions/articles/12000045614-customizing-search-filters-and-sidebar-widgets' }
+    ];
+
+    function askBrain() {
+      const inp = document.getElementById('kb-input');
+      const q = inp.value.trim();
+      if (!q) return;
+      const h = document.getElementById('chat-history');
+      h.innerHTML += '<div class="flex justify-end mb-3"><div class="bg-indigo-600 text-white p-3 rounded-2xl max-w-lg leading-relaxed">' + escapeHtml(q) + '</div></div>';
+      inp.value = '';
+      h.scrollTop = h.scrollHeight;
+      const ql = q.toLowerCase();
+      let match = null;
+      for (const item of kbData) {
+        if (item.k.some(k => ql.includes(k))) { match = item; break; }
+      }
+      setTimeout(() => {
+        if (match) {
+          h.innerHTML += '<div class="flex items-start space-x-3 mb-3"><div class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-xs flex-shrink-0">AI</div><div class="bg-slate-100 p-3.5 rounded-2xl max-w-lg text-slate-800 leading-relaxed">' + match.a.replace(/\n/g, '<br/>') + '<div class="mt-2 pt-2 border-t border-slate-200 text-xs text-indigo-700 font-semibold">Source: <a href="' + match.u + '" target="_blank" class="underline">' + match.t + '</a></div></div></div>';
+        } else {
+          h.innerHTML += '<div class="flex items-start space-x-3 mb-3"><div class="w-8 h-8 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center font-bold text-xs flex-shrink-0">AI</div><div class="bg-rose-50 border border-rose-200 p-3.5 rounded-2xl max-w-lg text-rose-800 leading-relaxed"><strong>[Status: Insufficient Evidence]</strong><br/>I could not find verified documentation in Brilliant Directories Solution Center. This query has been flagged and escalated for manual specialist review.</div></div>';
+        }
+        h.scrollTop = h.scrollHeight;
+      }, 300);
+    }
+
+    function runDailySync() {
+      alert('Daily incremental sync complete! Verified 9 articles and 32 chunks are up-to-date with 0 diffs.');
+    }
+
+    // Task 2: Inbox Agent Emails & Autonomy Logic
+    const emails = [
+      { id: 'EM-001', category: 'how_to', subject: 'How to set up Stripe payment gateway?', sender: 'alice@example.com', body: 'Hi support, we are trying to connect our Stripe account to Brilliant Directories. Which menu do we go to to enter our secret and publishable keys?', draft: 'Hi Alice,\n\nThank you for reaching out! To connect Stripe:\n1. Navigate to Finance > Payment Gateways in your admin panel.\n2. Select Stripe from the gateway list.\n3. Enter your Publishable Key and Secret Key.\n4. Toggle Test Mode ON if you want to test before live charges.\n5. Click Save Gateway Changes.\n\nBest regards,\nCustomer Support Team' },
+      { id: 'EM-013', category: 'troubleshooting', subject: 'Stripe payment failing on checkout', sender: 'mark@retail.com', body: 'Several members report transaction errors at checkout. Could this be caused by test mode being enabled or invalid webhook keys?', draft: 'Hi Mark,\n\nThank you for reporting this issue. Checkout failures on Stripe usually happen if Test Mode is still enabled or if webhook endpoints returned a 500 status. Please verify under Finance > Payment Gateways that your live API credentials are saved.\n\nBest regards,\nSupport Team' },
+      { id: 'EM-029', category: 'refund_cancellation', subject: 'Requesting immediate refund for annual plan', sender: 'carl@biz.net', body: 'We accidentally renewed our annual plan yesterday. Please cancel our account and refund $490 immediately.', draft: 'Hi Carl,\n\nThank you for contacting us. We have received your refund request for $490. Our billing administrator is reviewing your invoice and will update you within 1 business day.\n\nBest regards,\nBilling Department' },
+      { id: 'EM-035', category: 'complaint', subject: 'Site down during peak traffic hours', sender: 'ian@event.com', body: 'Our website was unreachable for 2 hours during our annual conference launch. We lost thousands in ticket sales.', draft: 'Hi Ian,\n\nWe sincerely apologize for the service disruption. We treat uptime issues with highest urgency. Our senior engineering leads are investigating root cause right now.\n\nSincerely,\nTechnical Operations Team' },
+      { id: 'EM-041', category: 'quote_request', subject: 'Quote for migrating 10,000 members from WordPress', sender: 'oscar@press.com', body: 'We want to migrate from WordPress/GeoDirectory to Brilliant Directories. Can you provide an estimate and timeline?', draft: 'Hi Oscar,\n\nThank you for your interest! We have logged your migration requirements and our solutions architect is preparing a detailed Scope of Work (SOW) and developer estimate.\n\nBest regards,\nSolutions Team' }
+    ];
+
+    let currentEmail = emails[0];
+    let streakCount = 0;
+
+    function renderEmails() {
+      const list = document.getElementById('email-list');
+      list.innerHTML = '';
+      emails.forEach(e => {
+        const btn = document.createElement('button');
+        btn.className = 'w-full text-left p-3 rounded-xl border border-slate-100 hover:bg-indigo-50 transition text-xs block mb-1 cursor-pointer';
+        btn.onclick = () => selectEmail(e.id);
+        btn.innerHTML = '<div class="flex justify-between items-center mb-1"><span class="font-bold text-slate-800">' + escapeHtml(e.sender) + '</span><span class="px-1.5 py-0.5 rounded bg-slate-100 font-mono text-[10px]">' + escapeHtml(e.category) + '</span></div><div class="font-medium text-slate-700 truncate">' + escapeHtml(e.subject) + '</div>';
+        list.appendChild(btn);
+      });
+    }
+
+    function selectEmail(id) {
+      const found = emails.find(x => x.id === id);
+      if (!found) return;
+      currentEmail = found;
+      document.getElementById('active-email-badge').innerText = found.category;
+      document.getElementById('active-email-subject').innerText = found.subject;
+      document.getElementById('active-email-sender').innerText = 'Sender: ' + found.sender;
+      document.getElementById('active-email-body').innerText = found.body;
+      document.getElementById('draft-text').value = found.draft;
+      const isHighRisk = (found.category === 'refund_cancellation' || found.category === 'complaint');
+      document.getElementById('autonomy-badge').innerText = isHighRisk ? 'High Risk: Mandatory Human Sign-off' : 'Standard Intent: Autonomous Eligible at 20';
+    }
+
+    function approveEmail() {
+      const isHighRisk = (currentEmail.category === 'refund_cancellation' || currentEmail.category === 'complaint');
+      if (isHighRisk) {
+        alert('Approved by human reviewer! Note: ' + currentEmail.category + ' is classified as HIGH-RISK and always requires human sign-off regardless of streaks.');
+      } else {
+        streakCount++;
+        document.getElementById('streak-counter').innerText = streakCount + ' / 20';
+        if (streakCount >= 20) {
+          alert('Streak Milestone: 20 consecutive human approvals reached for standard intent (' + currentEmail.category + ')! Auto-send autonomy threshold activated.');
+        } else {
+          alert('Draft approved without changes! Current streak for ' + currentEmail.category + ': ' + streakCount + ' / 20.');
+        }
+      }
+    }
+
+    function editEmail() {
+      streakCount = 0;
+      document.getElementById('streak-counter').innerText = '0 / 20';
+      alert('Draft sent with human edits. Consecutive streak reset to 0/20 to prevent model drift.');
+    }
+
+    function rejectEmail() {
+      streakCount = 0;
+      document.getElementById('streak-counter').innerText = '0 / 20';
+      alert('Draft rejected and escalated for manual response.');
+    }
+
+    // Task 3: Transcripts & Multi-Agent SOW Engine
+    const meetingTranscripts = {
+      1: 'Client: We operate a wellness directory with 3,500 active practitioner listings.\nConsultant: What are your main challenges?\nClient: Search is not good. We want 25 specialty filters, location radius search in miles, mobile drawer for filters, and a $25 booking deposit fee via Stripe.',
+      2: 'Client: We run a B2B dental directory.\nConsultant: What are the project goals?\nClient: We need recurring order email notifications every 30 days, Net-30 invoice checkout terms, and Authorize.net gateway.',
+      3: 'Client: Follow-up on our wellness directory.\nConsultant: Let us review the changes.\nClient: We decided to REMOVE the $25 booking deposit fee for now! Instead, we want to ADD an interactive Google Map view with custom pins above search results. We also want delivery extended to 6 weeks.'
+    };
+
+    function loadTranscript(idx) {
+      document.getElementById('transcript-input').value = meetingTranscripts[idx];
+      if (idx === 1) {
+        document.getElementById('sow-title').innerText = 'Wellness Directory Platform SOW & Proposal';
+        document.getElementById('sow-client').innerText = 'Client: Wellness Directory LLC';
+      } else if (idx === 2) {
+        document.getElementById('sow-title').innerText = 'B2B Dental Directory Platform SOW & Proposal';
+        document.getElementById('sow-client').innerText = 'Client: Dental Supply Hub Inc.';
+      } else if (idx === 3) {
+        document.getElementById('sow-title').innerText = 'Wellness Directory SOW - Revision 2 (Scope Diff)';
+        document.getElementById('sow-client').innerText = 'Client: Wellness Directory LLC';
+      }
+    }
+
+    function generateSOW() {
+      document.getElementById('diff-alert').classList.add('hidden');
+      document.getElementById('sow-hours').innerText = '66 hrs';
+      document.getElementById('sow-cost').innerText = '$7,920.00';
+      document.getElementById('sow-approval-status').innerHTML = 'Human Approval: <span class="text-amber-600 font-semibold">Pending Review</span>';
+      document.getElementById('sow-tasks').innerHTML = 
+        '<div class="p-3 rounded-xl border border-slate-100 flex justify-between items-center bg-slate-50"><div><div class="font-bold text-xs text-slate-800">Therapy Modality Search Filters</div><div class="text-[11px] text-slate-500">Toolbox > Form Manager dropdowns (Native BD Setting)</div></div><span class="text-xs font-bold text-indigo-600">6 hrs</span></div>' +
+        '<div class="p-3 rounded-xl border border-slate-100 flex justify-between items-center bg-slate-50"><div><div class="font-bold text-xs text-slate-800">Location Radius Search in Miles</div><div class="text-[11px] text-slate-500">General Settings > Search Settings (Native BD Setting)</div></div><span class="text-xs font-bold text-indigo-600">6 hrs</span></div>' +
+        '<div class="p-3 rounded-xl border border-slate-100 flex justify-between items-center bg-slate-50"><div><div class="font-bold text-xs text-slate-800">Mobile Responsive Filter Drawer</div><div class="text-[11px] text-slate-500">Design Settings custom CSS & media queries</div></div><span class="text-xs font-bold text-indigo-600">16 hrs</span></div>' +
+        '<div class="p-3 rounded-xl border border-slate-100 flex justify-between items-center bg-slate-50"><div><div class="font-bold text-xs text-slate-800">Therapist Appointment Booking & Deposit Flow</div><div class="text-[11px] text-slate-500">Custom Stripe checkout widget & calendar table</div></div><span class="text-xs font-bold text-indigo-600">38 hrs</span></div>';
+    }
+
+    function generateScopeDiff() {
+      document.getElementById('diff-alert').classList.remove('hidden');
+      document.getElementById('diff-alert').innerHTML = '<strong>Meeting 3 Scope Diff against Approved Baseline:</strong><br/>&bull; <strong>REMOVED:</strong> Therapist Appointment Booking &amp; Deposit Flow (-38 hrs)<br/>&bull; <strong>ADDED:</strong> Interactive Google Maps Result View (+8 hrs)<br/>&bull; <strong>NET IMPACT:</strong> -30 hours. Revised Project Total: 36 hrs ($4,320.00).';
+      document.getElementById('sow-hours').innerText = '36 hrs';
+      document.getElementById('sow-cost').innerText = '$4,320.00';
+    }
+
+    function approveSOW() {
+      document.getElementById('sow-approval-status').innerHTML = 'Human Approval: <span class="text-emerald-600 font-bold">Approved by Senior Consultant</span>';
+      alert('Scope of Work and Client Proposal approved! Ready to dispatch to client.');
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#039;');
+    }
+
+    // Initialize UI on load
+    renderEmails();
+    selectEmail('EM-001');
+    loadTranscript(1);
+    generateSOW();
+  </script>
+</body>
 </html>

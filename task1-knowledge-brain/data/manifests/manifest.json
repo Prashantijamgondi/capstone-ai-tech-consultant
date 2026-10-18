@@ -1,0 +1,72 @@
+{
+  "2f741c2cc1fb": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000558357-can-i-send-a-mass-email-campaign-using-brilliant-directories-",
+    "title": "Can I Send A Mass Email Campaign Using Brilliant Directories?",
+    "last_modified": "2026-06-18T06:08:26+05:30",
+    "content_hash": "81e587c229ee45266307364362a67c703c720efe43e483f7ff47f1fd427e28c8",
+    "chunks_count": 1
+  },
+  "75515ff91c38": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000558363-emails-email-accounts",
+    "title": "Emails \u00bb Email Accounts",
+    "last_modified": "2026-10-14T03:16:38+05:30",
+    "content_hash": "251560fa3681e2e7015d8cffad68399a0bf1e74780496c4d8ac77876a6318cac",
+    "chunks_count": 1
+  },
+  "cde09504b3df": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000558373-email-forwarders",
+    "title": "Email Forwarders",
+    "last_modified": "2026-06-18T01:10:33+05:30",
+    "content_hash": "b3ea6e9066dd56ec562ba12910f69a63314a349cda1666b4548b6398d2872d92",
+    "chunks_count": 2
+  },
+  "685a26b72270": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000558389-settings-general-settings-social-media-tab",
+    "title": "Settings \u00bb General Settings \u00bb Social Media Tab",
+    "last_modified": "2023-10-03T22:10:48+05:30",
+    "content_hash": "92654541f2dd7206c6ef270eaf09af3756134aafdd2314daf22f521adfb33ef7",
+    "chunks_count": 1
+  },
+  "d7e93f33fc24": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000558401-how-to-import-categories-via-csv-file",
+    "title": "How To Import Categories Via CSV File",
+    "last_modified": "2026-06-09T17:13:28+05:30",
+    "content_hash": "91c1eca80c0192e62112ad7fae1237bfd95116bf86d8b85e05a7766cde7cf130",
+    "chunks_count": 2
+  },
+  "65e797b2b45d": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000558475-how-to-import-members-via-csv-file",
+    "title": "How To Import Members Via CSV File",
+    "last_modified": "2026-10-14T03:16:39+05:30",
+    "content_hash": "71416aec1e83682ecbaec90f4cabc4817dc9935cb11fab8b59402ea1a19ec0d8",
+    "chunks_count": 2
+  },
+  "3ca929e0445f": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000559709-how-to-override-and-edit-default-css-stylesheets",
+    "title": "How to Override and Edit Default CSS stylesheets",
+    "last_modified": "2026-10-14T03:16:43+05:30",
+    "content_hash": "aa7e38d256fa049305016b0de5ba7e72ead53d5fc2b6e50e5c2a6145faa2713d",
+    "chunks_count": 2
+  },
+  "4f13ee39d20f": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000559800-how-to-access-webmail-through-the-admin-area",
+    "title": "How To Access Webmail Through the Admin Area",
+    "last_modified": "2026-10-14T03:16:44+05:30",
+    "content_hash": "cfb2ae09b75cd3b69e6fd687c2b626a564921bd3a4bf077a1bf31371744b4243",
+    "chunks_count": 1
+  },
+  "98efabf78ff2": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000567728-how-do-i-cancel-payment-subscriptions-orders",
+    "title": "How Do I Cancel Payment Subscriptions - Orders",
+    "last_modified": "2026-10-14T03:16:45+05:30",
+    "content_hash": "9b2c6793d9f39a2ebe0f7171f1d2d2ac5ead7351b7ba33ec7cf73ff24295414a",
+    "chunks_count": 1
+  },
+  "0f10afe69b97": {
+    "url": "https://support.brilliantdirectories.com/support/solutions/articles/5000568062-mandatory-fields-for-member-imports",
+    "title": "Mandatory Fields For Member Imports",
+    "last_modified": "2026-08-18T06:22:57+05:30",
+    "content_hash": "4217e22b0e67c86931da063d77ea918721fb8fd750ab50da08f4d0b2bfc749b6",
+    "chunks_count": 2
+  }
+}

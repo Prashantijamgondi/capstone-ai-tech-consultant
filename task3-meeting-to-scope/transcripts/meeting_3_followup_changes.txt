@@ -1,0 +1,10 @@
+Client: Hi again! We reviewed our internal requirements from our first meeting about the wellness directory.
+Consultant: Welcome back! Let us review the changes and feedback on the initial scope.
+Client: First, about the  booking deposit feature: after discussing with our legal advisor, we decided to REMOVE the booking deposit and payment processing for now. We will just use external Calendly embed links on practitioner profiles instead.
+Consultant: Got it. We will remove custom booking checkout and deposit processing from the development scope, which significantly reduces custom engineering hours.
+Client: Exactly! But we want to ADD something new: we want an interactive Google Map view right above the search results showing verified pins for each practitioner.
+Consultant: An interactive map with custom pins above search results. That is definitely doable. Does the directory already have the Google Maps API configured?
+Client: Not yet, so you will need to guide us on setting up the API keys and styling the map container.
+Consultant: Perfect. And regarding our delivery date: we previously discussed 4 weeks, can we push the final delivery to 6 weeks to allow our practitioners time to update their profiles?
+Client: Yes, 6 weeks works much better for our team.
+Consultant: Excellent. We will produce a Scope Diff report highlighting what was added, what was removed, what was modified, and flag out-of-scope items.

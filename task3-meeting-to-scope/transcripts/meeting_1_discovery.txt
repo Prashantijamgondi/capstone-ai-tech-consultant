@@ -1,0 +1,14 @@
+Client: Hello! Thanks for meeting with us today. We operate a local wellness & therapy directory with about 3,500 active practitioner listings.
+Consultant: Welcome! It is great to speak with you. Tell us about the main challenges you are trying to solve right now.
+Client: Right now, our search experience isn't great. Visitors land on our homepage and cannot easily filter practitioners by therapy specialties or by their physical distance in miles. We also need to accept client appointment bookings directly on therapist profiles.
+Consultant: Understood. Regarding search filters: you need specialty dropdowns and location radius search. Are the specialties fixed categories, or do therapists enter custom keywords?
+Client: Fixed categories! We have about 25 distinct therapy modalities like Acupuncture, Physical Therapy, and Chiropractic care.
+Consultant: Perfect. And for bookings, what workflow do you envision?
+Client: We want visitors to select an available time slot and pay a  booking deposit fee via credit card.
+Consultant: Does your current platform support Stripe for deposits?
+Client: Yes, our main subscriptions run on Stripe right now.
+Consultant: Excellent. What about mobile?
+Client: Mobile is huge for us—over 70% of traffic is on phones. The search filter sidebar on mobile looks cramped and hard to use.
+Consultant: We will make sure the mobile layout is responsive with a touch-friendly slide-out drawer for filters. Anything else for this phase?
+Client: No, let us focus on those: search filters, location radius, mobile layout, and therapist appointment deposits.
+Consultant: Great. We will analyze existing product capabilities and prepare a structured Scope of Work and estimates.

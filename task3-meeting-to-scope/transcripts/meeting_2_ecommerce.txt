@@ -1,0 +1,8 @@
+Client: Thanks for meeting. We run a specialty B2B dental supplies directory with eCommerce checkout.
+Consultant: Nice to meet you. Walk us through your project goals.
+Client: We need three things. First, recurring order notifications sent via email when dental clinics run low on supplies every 30 days. Second, a custom checkout flow where members can pay via Net-30 invoice terms rather than immediate credit card charges. Third, integration with Authorize.net alongside Stripe.
+Consultant: Let us inspect the checkout flow. For Net-30 invoice terms, does the order complete as 'Pending Payment' in your transaction history?
+Client: Exactly. An invoice PDF should be generated and emailed with bank transfer details.
+Consultant: And for recurring email reminders, do you need custom automated email templates triggered by order timestamps?
+Client: Yes, exactly 30 days after the last completed transaction.
+Consultant: That is very clear. We will check existing billing configurations and formulate an estimate for the custom Net-30 workflow.

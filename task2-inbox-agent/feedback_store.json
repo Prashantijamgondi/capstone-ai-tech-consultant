@@ -1,0 +1,351 @@
+{
+  "state": {
+    "how_to": {
+      "category": "how_to",
+      "consecutiveApprovals": 0,
+      "isEligibleForAutonomy": false,
+      "totalProcessed": 42,
+      "totalEdits": 2
+    }
+  },
+  "history": [
+    {
+      "emailId": "streak_test_1",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.084Z"
+    },
+    {
+      "emailId": "streak_test_2",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.088Z"
+    },
+    {
+      "emailId": "streak_test_3",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.089Z"
+    },
+    {
+      "emailId": "streak_test_4",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.090Z"
+    },
+    {
+      "emailId": "streak_test_5",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.091Z"
+    },
+    {
+      "emailId": "streak_test_6",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.092Z"
+    },
+    {
+      "emailId": "streak_test_7",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.093Z"
+    },
+    {
+      "emailId": "streak_test_8",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.094Z"
+    },
+    {
+      "emailId": "streak_test_9",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.095Z"
+    },
+    {
+      "emailId": "streak_test_10",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.096Z"
+    },
+    {
+      "emailId": "streak_test_11",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.097Z"
+    },
+    {
+      "emailId": "streak_test_12",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.098Z"
+    },
+    {
+      "emailId": "streak_test_13",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.099Z"
+    },
+    {
+      "emailId": "streak_test_14",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.100Z"
+    },
+    {
+      "emailId": "streak_test_15",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.100Z"
+    },
+    {
+      "emailId": "streak_test_16",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.101Z"
+    },
+    {
+      "emailId": "streak_test_17",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.102Z"
+    },
+    {
+      "emailId": "streak_test_18",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.104Z"
+    },
+    {
+      "emailId": "streak_test_19",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.125Z"
+    },
+    {
+      "emailId": "streak_test_20",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:43:30.127Z"
+    },
+    {
+      "emailId": "streak_test_edit",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Edited human custom reply.",
+      "action": "edited",
+      "reason": "Added specific detail",
+      "timestamp": "2026-10-18T18:43:30.130Z"
+    },
+    {
+      "emailId": "streak_test_1",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.625Z"
+    },
+    {
+      "emailId": "streak_test_2",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.630Z"
+    },
+    {
+      "emailId": "streak_test_3",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.631Z"
+    },
+    {
+      "emailId": "streak_test_4",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.632Z"
+    },
+    {
+      "emailId": "streak_test_5",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.634Z"
+    },
+    {
+      "emailId": "streak_test_6",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.635Z"
+    },
+    {
+      "emailId": "streak_test_7",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.636Z"
+    },
+    {
+      "emailId": "streak_test_8",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.637Z"
+    },
+    {
+      "emailId": "streak_test_9",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.638Z"
+    },
+    {
+      "emailId": "streak_test_10",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.640Z"
+    },
+    {
+      "emailId": "streak_test_11",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.641Z"
+    },
+    {
+      "emailId": "streak_test_12",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.642Z"
+    },
+    {
+      "emailId": "streak_test_13",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.643Z"
+    },
+    {
+      "emailId": "streak_test_14",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.644Z"
+    },
+    {
+      "emailId": "streak_test_15",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.645Z"
+    },
+    {
+      "emailId": "streak_test_16",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.646Z"
+    },
+    {
+      "emailId": "streak_test_17",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.647Z"
+    },
+    {
+      "emailId": "streak_test_18",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.648Z"
+    },
+    {
+      "emailId": "streak_test_19",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.649Z"
+    },
+    {
+      "emailId": "streak_test_20",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Exact standard reply.",
+      "action": "approved",
+      "timestamp": "2026-10-18T18:44:06.650Z"
+    },
+    {
+      "emailId": "streak_test_edit",
+      "category": "how_to",
+      "originalDraft": "Exact standard reply.",
+      "finalSent": "Edited human custom reply.",
+      "action": "edited",
+      "reason": "Added specific detail",
+      "timestamp": "2026-10-18T18:44:06.651Z"
+    }
+  ]
+}

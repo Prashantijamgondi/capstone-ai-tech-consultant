@@ -1,0 +1,402 @@
+[
+  {
+    "id": "EM-001",
+    "category": "how_to",
+    "subject": "How to set up Stripe payment gateway?",
+    "sender": "alice@example.com",
+    "body": "Hi support, we are trying to connect our Stripe account to Brilliant Directories. Which menu do we go to to enter our secret and publishable keys?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-002",
+    "category": "how_to",
+    "subject": "Where is test mode for payments?",
+    "sender": "bob@startup.io",
+    "body": "Hello, we want to test credit card transactions before launching. Can we enable test mode in the payment settings?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-003",
+    "category": "how_to",
+    "subject": "Supported payment gateways inquiry",
+    "sender": "clara@agency.com",
+    "body": "Hi team, which gateways can we use natively with Brilliant Directories? Do you support PayPal Standard and Stripe?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-004",
+    "category": "how_to",
+    "subject": "How do I customize sidebar search filters?",
+    "sender": "david@biz.org",
+    "body": "Can we add custom dropdown filters to the sidebar search without custom code? Where is the Form Manager located?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-005",
+    "category": "how_to",
+    "subject": "Enabling location radius search",
+    "sender": "emma@local.com",
+    "body": "Hi, our directory visitors want to search for members by radius in miles. How do we turn this on in Search Settings?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-006",
+    "category": "how_to",
+    "subject": "Editing system email templates",
+    "sender": "frank@community.net",
+    "body": "Where can we edit the welcome email sent out to new members when they sign up?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-007",
+    "category": "how_to",
+    "subject": "Adding Google Maps API key",
+    "sender": "grace@directory.com",
+    "body": "Our maps are showing an error watermark. Where in the General Settings do we paste our Google Maps API key?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-008",
+    "category": "how_to",
+    "subject": "Importing members via CSV file",
+    "sender": "henry@corp.com",
+    "body": "We have 500 members in an Excel sheet. What are the mandatory fields required to import them via CSV?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-009",
+    "category": "how_to",
+    "subject": "Changing default directory currency",
+    "sender": "isabella@global.co",
+    "body": "We are based in the UK. How do we change the currency from USD to GBP in Finance settings?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-010",
+    "category": "how_to",
+    "subject": "Allowing members to cancel self-service",
+    "sender": "jack@club.com",
+    "body": "Can members cancel their accounts directly from their dashboard settings, or do we have to cancel them manually?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-011",
+    "category": "how_to",
+    "subject": "Adding custom CSS styles",
+    "sender": "kate@design.io",
+    "body": "Where can we insert CSS overrides so they do not get erased when default templates update?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-012",
+    "category": "how_to",
+    "subject": "Connecting custom domain forwarders",
+    "sender": "leo@domains.com",
+    "body": "How do we forward info@ourdomain.com to our primary support inbox inside BD?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-013",
+    "category": "troubleshooting",
+    "subject": "Stripe payment failing on checkout",
+    "sender": "mark@retail.com",
+    "body": "Several members report transaction errors at checkout. Could this be caused by test mode being enabled or invalid webhook keys?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-014",
+    "category": "troubleshooting",
+    "subject": "Radius search not returning results",
+    "sender": "nina@geo.com",
+    "body": "When typing a zip code, no results appear. Is the Google Places API enabled properly?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-015",
+    "category": "troubleshooting",
+    "subject": "Member import failing on line 42",
+    "sender": "oliver@data.com",
+    "body": "The CSV import stops at row 42 with a missing plan ID error. What format does the plan ID require?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-016",
+    "category": "troubleshooting",
+    "subject": "Email notifications going to spam",
+    "sender": "paula@mail.com",
+    "body": "Our member welcome emails are landing in spam folders. How do we configure SPF and DKIM records?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-017",
+    "category": "troubleshooting",
+    "subject": "Custom CSS not rendering on mobile",
+    "sender": "quinn@web.com",
+    "body": "The changes we added in Design Settings Custom CSS are not appearing on mobile devices.",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-018",
+    "category": "troubleshooting",
+    "subject": "Webhook failure notification from Stripe",
+    "sender": "ryan@fin.io",
+    "body": "Stripe sent an alert that invoice.payment_succeeded webhook endpoint returned a 500 error.",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-019",
+    "category": "troubleshooting",
+    "subject": "Member dashboard button greyed out",
+    "sender": "sara@users.com",
+    "body": "One of our premium members cannot click the publish article button. Which permission setting controls this?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-020",
+    "category": "troubleshooting",
+    "subject": "Categories not linking to search results",
+    "sender": "tom@index.com",
+    "body": "Clicking subcategory links on the homepage shows a 404 page.",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-021",
+    "category": "troubleshooting",
+    "subject": "Transaction history missing recent charges",
+    "sender": "uma@store.com",
+    "body": "We see payments in our Stripe account but they do not appear in BD Transaction History.",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-022",
+    "category": "troubleshooting",
+    "subject": "SSL certificate warning on custom domain",
+    "sender": "victor@secure.org",
+    "body": "Visitors see an insecure warning when accessing our root domain.",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-023",
+    "category": "project_request",
+    "subject": "Need custom multi-step booking integration",
+    "sender": "wendy@hotel.com",
+    "body": "We want to build a custom calendar booking system inside our listing profiles with SMS reminders.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-024",
+    "category": "project_request",
+    "subject": "Mobile app wrapper for iOS and Android",
+    "sender": "xander@apps.com",
+    "body": "Can your consulting team build a native mobile app wrapper for our directory website?",
+    "risk": "high"
+  },
+  {
+    "id": "EM-025",
+    "category": "project_request",
+    "subject": "Enterprise SSO integration with Okta",
+    "sender": "yvonne@corp.com",
+    "body": "We need SAML 2.0 single sign-on with Okta for our corporate directory members.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-026",
+    "category": "project_request",
+    "subject": "Custom marketplace escrow payment flow",
+    "sender": "zack@market.com",
+    "body": "We want buyers to pay sellers directly and take a 10% commission via Stripe Connect Custom.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-027",
+    "category": "project_request",
+    "subject": "AI chat widget embedded in member profiles",
+    "sender": "aaron@tech.ai",
+    "body": "Can you build an AI consultant bot on every member profile that answers questions about that vendor?",
+    "risk": "high"
+  },
+  {
+    "id": "EM-028",
+    "category": "project_request",
+    "subject": "Custom lead distribution CRM webhook engine",
+    "sender": "beth@leads.com",
+    "body": "We want incoming leads automatically parsed and auctioned to the highest bidding directory member.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-029",
+    "category": "refund_cancellation",
+    "subject": "Requesting immediate refund for annual plan",
+    "sender": "carl@biz.net",
+    "body": "We accidentally renewed our annual plan yesterday. Please cancel our account and refund  immediately.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-030",
+    "category": "refund_cancellation",
+    "subject": "Cancel subscription and confirmation required",
+    "sender": "diana@law.com",
+    "body": "Please cancel my monthly membership plan immediately and confirm no further charges will be billed.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-031",
+    "category": "refund_cancellation",
+    "subject": "Double charged this morning",
+    "sender": "ethan@card.com",
+    "body": "I was charged twice ( x 2) for invoice #8841. Please refund the duplicate transaction.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-032",
+    "category": "refund_cancellation",
+    "subject": "Dissatisfied with platform, requesting partial refund",
+    "sender": "fiona@shop.org",
+    "body": "We only used the site for 3 days and it does not fit our business. Can we get a prorated refund?",
+    "risk": "high"
+  },
+  {
+    "id": "EM-033",
+    "category": "refund_cancellation",
+    "subject": "Cancel trial before billing date",
+    "sender": "george@trial.com",
+    "body": "Our 14 day trial ends tomorrow. Please cancel it now so our credit card is not billed.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-034",
+    "category": "refund_cancellation",
+    "subject": "Disputed charge inquiry from bank",
+    "sender": "hannah@audit.com",
+    "body": "Our finance department flagged an unrecognized charge of  from your company. Please explain or refund.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-035",
+    "category": "complaint",
+    "subject": "Site down during peak traffic hours",
+    "sender": "ian@event.com",
+    "body": "Our website was unreachable for 2 hours during our annual conference launch. We lost thousands in ticket sales.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-036",
+    "category": "complaint",
+    "subject": "Unacceptable delay in support response",
+    "sender": "julia@urgent.com",
+    "body": "I submitted a ticket 4 days ago regarding broken checkout and have received no reply. This is completely unacceptable.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-037",
+    "category": "complaint",
+    "subject": "Latest template update broke custom layout",
+    "sender": "kevin@portal.com",
+    "body": "Your latest system update wiped out our custom header navigation. Fix this immediately.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-038",
+    "category": "complaint",
+    "subject": "Spam members creating fake profiles",
+    "sender": "laura@trust.org",
+    "body": "Our directory is getting flooded with bot signups and spam listings. Why is reCAPTCHA not stopping them?",
+    "risk": "high"
+  },
+  {
+    "id": "EM-039",
+    "category": "complaint",
+    "subject": "Billing error overcharged our account",
+    "sender": "mike@finances.com",
+    "body": "You billed us the enterprise tier instead of professional tier for two months in a row. We demand an explanation.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-040",
+    "category": "complaint",
+    "subject": "Search results showing wrong distances",
+    "sender": "nora@maptest.com",
+    "body": "Members located 50 miles away are listed as 2 miles away. Our customers are complaining about false info.",
+    "risk": "high"
+  },
+  {
+    "id": "EM-041",
+    "category": "quote_request",
+    "subject": "Quote for migrating 10,000 members from WordPress",
+    "sender": "oscar@press.com",
+    "body": "We want to migrate from WordPress/GeoDirectory to Brilliant Directories. Can you provide an estimate and timeline?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-042",
+    "category": "quote_request",
+    "subject": "Cost to customize checkout design and invoice PDF",
+    "sender": "pat@brand.com",
+    "body": "What is the cost to redesign our member checkout page and add custom company tax fields to PDF receipts?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-043",
+    "category": "quote_request",
+    "subject": "Estimate for custom Zapier webhooks integration",
+    "sender": "quincy@ops.io",
+    "body": "We need real-time member signup data sent to HubSpot via custom webhooks. How many developer hours is this?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-044",
+    "category": "quote_request",
+    "subject": "Quote for full turnkey website setup",
+    "sender": "rachel@start.co",
+    "body": "We bought a Brilliant Directories license but want a professional consultant team to do the complete setup.",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-045",
+    "category": "quote_request",
+    "subject": "Cost for custom search algorithm by member review rating",
+    "sender": "sam@reviews.com",
+    "body": "We want search results sorted by a custom weighted review formula. How much would this custom widget cost?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-046",
+    "category": "follow_up",
+    "subject": "Following up on custom design quote sent last Tuesday",
+    "sender": "tina@agency.com",
+    "body": "Hi, just following up on our request for the homepage redesign quote. Has the tech lead reviewed the scope yet?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-047",
+    "category": "follow_up",
+    "subject": "Status of ticket #4401 - DNS configuration",
+    "sender": "ulysses@host.net",
+    "body": "Hello, checking in to see if our DNS records have been verified by your technical team.",
+    "risk": "low"
+  },
+  {
+    "id": "EM-048",
+    "category": "follow_up",
+    "subject": "Any updates on the Stripe recurring billing bug?",
+    "sender": "val@paytech.com",
+    "body": "Hi, we spoke on Friday about the invoice recurring billing sync issue. Any update on the fix?",
+    "risk": "medium"
+  },
+  {
+    "id": "EM-049",
+    "category": "follow_up",
+    "subject": "Follow-up regarding our meeting notes from yesterday",
+    "sender": "william@corp.com",
+    "body": "Thanks for the discovery call yesterday. When can we expect the SOW and hours breakdown proposal?",
+    "risk": "low"
+  },
+  {
+    "id": "EM-050",
+    "category": "follow_up",
+    "subject": "Second follow-up: pending refund confirmation for invoice 992",
+    "sender": "zoe@client.org",
+    "body": "Following up again regarding invoice 992 refund. Support said it would process in 48 hours but we have not seen it.",
+    "risk": "high"
+  }
+]

@@ -88,5 +88,5 @@ app.get('/autonomy-status', (req: Request, res: Response) => {
 });
 
 app.listen(PORT, () => {
-  console.log([Task 2] Inbox Agent Express Server running on port );
+  console.log('[Task 2] Inbox Agent running on port ' + PORT);
 });

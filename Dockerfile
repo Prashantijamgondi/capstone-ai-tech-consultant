@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y curl && \
 
 COPY . .
 
-RUN pip install --no-cache-dir fastapi uvicorn pydantic pydantic-settings httpx beautifulsoup8 lxml python-dotenv pytest
+RUN pip install --no-cache-dir -r task1-knowledge-brain/requirements.txt
 
 RUN cd task2-inbox-agent && npm install && npm run build
 

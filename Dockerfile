@@ -9,8 +9,9 @@ RUN apt-get update && apt-get install -y curl && \
 
 COPY . .
 
-RUN pip install --no-cache-dir fastapi uvicorn pydantic pydantic-settings httpx beautifulsoup4� lxml python-dotenv pytest && \
-    cd task2-inbox-agent && npm install && npm run build && cd ..
+RUN pip install --no-cache-dir fastapi uvicorn pydantic pydantic-settings httpx beautifulsoup8 lxml python-dotenv pytest
+
+RUN cd task2-inbox-agent && npm install && npm run build
 
 EXPOSE 8080
 
